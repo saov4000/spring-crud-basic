@@ -39,7 +39,4 @@ public class ProductModel {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
-	
-
 }

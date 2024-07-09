@@ -39,5 +39,9 @@ public class ProductControl {
 		return produtoRepository.save(p);
 	}
 	
-	
+	@RequestMapping(value="/produtos/{id}", method=RequestMethod.DELETE)
+	public void remover(@PathVariable int id) {
+		ProductModel p = filtrar(id);
+		produtoRepository.delete(p);
+	}
 }
